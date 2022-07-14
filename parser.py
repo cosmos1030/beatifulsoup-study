@@ -10,7 +10,7 @@ elements = soup.select('div.esg-entry-content a.eg-grant-element-0')
 titles = []
 links = []
 
-for index, element in enumerate(elements, 1):
+for index, element in enumerate(elements, 1):  #index 1부터 시작
     titles.append(element.text)
     links.append(element.attrs['href'])
 
