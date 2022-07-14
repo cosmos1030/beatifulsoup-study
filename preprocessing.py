@@ -18,3 +18,13 @@ df2
 df = pd.concat([df1,df2])
 df
 # %%
+df.set_index('종목코드', inplace = True)
+# %%
+df.head()
+# %%
+df.info()
+# %%
+df.loc['060310'][0]
+# %%
+df.to_csv("data/codeToName.csv", mode='w')
+# %%
