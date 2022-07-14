@@ -18,13 +18,14 @@ df2
 df = pd.concat([df1,df2])
 df
 # %%
-df.set_index('종목코드', inplace = True)
+df.set_index('종목명', inplace = True)
 # %%
 df.head()
 # %%
 df.info()
 # %%
-df.loc['060310'][0]
+df.loc['삼성전자'][0]
 # %%
-df.to_csv("data/codeToName.csv", mode='w')
+df.to_csv("data/nameToCode.csv", mode='w')
+
 # %%
