@@ -1,8 +1,9 @@
 # 종목 코드를 입력하면 네이버 금융에서 주가를 불러오는 예제
-
+# %%
 import requests
 from bs4 import BeautifulSoup as bs
 
+# %%
 code = input("종목 코드를 입력하세요: ")
 page = requests.get("https://finance.naver.com/item/main.naver?code="+code)
 soup = bs(page.text, "html.parser")
